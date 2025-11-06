@@ -1,45 +1,29 @@
-# DiceRollSimulator
+# Dice Roll Simulation and Loop Practice (Chapter 5)
 
-A simple C++ console application that simulates dice‐rolling operations.  
-Built with Visual Studio (or your preferred C++ IDE), this project demonstrates basic random number generation, loops, user interaction, and output formatting.
+A C++ program that uses random number generation and loop control structures to simulate dice rolls and demonstrate multiple types of loops.
 
----
+## Overview
+- Simulates a single six-sided die roll and compares it to a user’s guess.
+- Prints special messages based on the result of the roll and guess.
+- Demonstrates several loop constructs and exercises:
+  - For loop counting up from 1 to 5.
+  - For loop counting down from 100 to 0, printing numbers divisible by 17.
+  - While loop performing the same divisible-by-17 task.
+  - Do-while loop repeatedly prompting the user for input and computing modulus 5.
+  - Nested loops generating a multiplication grid (1×1 through 5×6).
 
-## Project Overview
+## Core Logic
+- Generates pseudo-random numbers using `rand()` seeded with `time(NULL)`.
+- Evaluates conditional expressions for “WINNER”, “DOUBLE WINNER”, and “LUCKY PERSON” scenarios.
+- Demonstrates the difference between pre-test, post-test, and nested loop structures.
 
-DiceRollSimu simulates rolling one or more dice for a user-specified number of rolls. It then outputs statistics like frequency counts and results distributions. The application covers these fundamentals:
-- Random number generation using <code>std::rand</code> / <code><random></code>
-- Looping constructs to repeat rolls
-- Conditional logic and accumulators to count outcomes
-- Clear console output with formatted tables summarizing results
+## Input Validation
+- Ensures the user’s guess is within the range 1–6.
+- Uses a do-while loop to continue prompting until valid input is received.
 
----
-
-## Features
-
-- Prompt user for number of dice and number of rolls  
-- Simulate each roll and record the result  
-- Display a summary histogram or table of outcomes (e.g., how many times each face appeared)  
-- Support for different dice types (six-sided by default; extendable)  
-- Basic input validation for user entries  
-
----
-
-## Technologies Used
-
-- **Language:** C++  
-- **IDE:** Visual Studio (2019/2022) — or any C++ compiler supporting C++11 or later  
-- **Version Control:** Git & GitHub  
-
----
-
-## Getting Started
-
-### Prerequisites
-- Windows (or any OS with a C++ compiler)  
-- Visual Studio with “Desktop development with C++” workload (if using Visual Studio)  
-
-### Clone the repository
-```bash
-git clone https://github.com/Javi1591/DiceRollSimu.git
-cd DiceRollSimu
+## Build & Run
+- Visual Studio (Windows): open the solution or create a Console App and add the source file, then **Build → Run**.
+- g++ (CLI):
+  ```bash
+  g++ -std=c++11 -O2 -o DiceRollSimu nazarioCPP14.cpp
+  ./DiceRollSimu
