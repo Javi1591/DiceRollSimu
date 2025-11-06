@@ -1,11 +1,11 @@
-# DiceRollSimu
+# DiceRollSimulator
 
 A simple C++ console application that simulates dice‐rolling operations.  
 Built with Visual Studio (or your preferred C++ IDE), this project demonstrates basic random number generation, loops, user interaction, and output formatting.
 
 ---
 
-## 📘 Project Overview
+## Project Overview
 
 DiceRollSimu simulates rolling one or more dice for a user-specified number of rolls. It then outputs statistics like frequency counts and results distributions. The application covers these fundamentals:
 - Random number generation using <code>std::rand</code> / <code><random></code>
@@ -15,7 +15,7 @@ DiceRollSimu simulates rolling one or more dice for a user-specified number of r
 
 ---
 
-## 🧩 Features
+## Features
 
 - Prompt user for number of dice and number of rolls  
 - Simulate each roll and record the result  
@@ -25,7 +25,7 @@ DiceRollSimu simulates rolling one or more dice for a user-specified number of r
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Language:** C++  
 - **IDE:** Visual Studio (2019/2022) — or any C++ compiler supporting C++11 or later  
@@ -33,7 +33,7 @@ DiceRollSimu simulates rolling one or more dice for a user-specified number of r
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Windows (or any OS with a C++ compiler)  
